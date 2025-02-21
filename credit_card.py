@@ -1,5 +1,6 @@
 from base import PaymentProcessor
 
+
 class CreditCardPayment(PaymentProcessor):
     """
        Represents a credit card payment.
@@ -18,6 +19,7 @@ class CreditCardPayment(PaymentProcessor):
         print(f"Processing credit card payment of {self.amount:.2f}.")
         self.fraud_check()
         self.deposit_payment()
+        self.generate_receipt()
 
     # transaction_fee
     def transaction_fee(self):
