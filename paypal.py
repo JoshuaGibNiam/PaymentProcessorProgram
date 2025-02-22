@@ -23,3 +23,7 @@ class PayPal(PaymentProcessor):
         print(f"Transaction made by PayPal payment: \n"
               f"payment of ${self.amount:.2f} deposited to merchant account.\n"
               f"Transaction fee: ${self.transaction_fee()}")
+
+if __name__ == "__main__":
+    myclass = PayPal(188)
+    myclass.process_payment()

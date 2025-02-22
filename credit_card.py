@@ -32,3 +32,7 @@ class CreditCardPayment(PaymentProcessor):
     def generate_receipt(self):
         print(f"Transaction made for credit card payment: {self.amount - self.transaction_fee():.2f}"
               f"deposited into account. Transaction fee: {self.transaction_fee():.2f}.")
+
+if __name__ == "__main__":
+    myclass = CreditCardPayment(188)
+    myclass.process_payment()
